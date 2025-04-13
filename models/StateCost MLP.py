@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from torch.utils.data import TensorDataset, DataLoader
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('D:/ML/Assets/first/cleaned.csv')
+df = pd.read_csv('C:/Users/anand/OneDrive/Documents/MoneyLit/MoneyLit/Assets/Avg Cost by state/cleaned.csv')
 X = df.drop('Value', axis=1).values
 y = df['Value'].values
 
