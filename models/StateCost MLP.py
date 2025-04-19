@@ -95,7 +95,7 @@ torch.save(model.state_dict(), 'statecost_mlp.pth')
 print("Model saved as 'statecost_mlp.pth'")
 
 custom_input = np.zeros(55)  # 55 features (0–54)
-custom_input[0] = 2020   # Year
+custom_input[0] = 2021   # Year
 custom_input[48] = 1     # state_Virginia
 custom_input[53] = 1     # type_Public Out-of-State
 custom_input[54] = 1     # length_4-year
