@@ -38,12 +38,6 @@ df['earnings_med_adjusted'] = df.apply(lambda x: x['earnings_med'] * cpi_factors
 df.to_csv('C:/Users/anand/OneDrive/Documents/MoneyLit/MoneyLit/Assets/Earning and Loan/CleanedData.csv', index=False)
 print(df[['inst_name', 'year', 'earnings_med', 'earnings_med_adjusted']].head())
 
-#Quick Scan
-print("Dataset Shape: ", df.shape)
-print("\nColumns:", df.columns.tolist())
-print("\nMissingValues: ", df.isnull().sum())
-print("nSample Data:\n", df.head())
-
 # Features and Target
 X = df.drop(['earnings_med', 'earnings_med_adjusted', 'inst_name'], axis=1)
 y = df['earnings_med_adjusted']  # Use inflation-adjusted target
