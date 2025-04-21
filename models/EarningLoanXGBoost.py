@@ -103,5 +103,3 @@ if inst_name in df['inst_name'].values:
     true_earnings = df[df['inst_name'] == inst_name]['earnings_med_adjusted'].iloc[0]
     print(f"Predicted Earnings for {inst_name}: ${pred:.2f} (2025 Adjusted)")
     print(f"True Earnings for {inst_name}: ${true_earnings:.2f} (2025 Adjusted, Year {year})")
-
-   
